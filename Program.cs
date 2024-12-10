@@ -12,8 +12,7 @@ namespace homeWorkCrystalStore
         {
             int costOneCrystal = 11;
             int userNumberGold;
-            int userNumberCrystal;
-            int userRisedueGold;
+            int userNumberCrystal;           
 
             Console.Write("Hello traveler how mach gold you have?: ");
             userNumberGold = Convert.ToInt32(Console.ReadLine());
@@ -22,9 +21,9 @@ namespace homeWorkCrystalStore
                 $" now how mach crytal do you want by?: ");
             userNumberCrystal = Convert.ToInt32(Console.ReadLine());
 
-            userRisedueGold = userNumberGold - userNumberCrystal * costOneCrystal;
+            userNumberGold = userNumberGold - userNumberCrystal * costOneCrystal;
 
-            Console.WriteLine($"Do you have {userNumberCrystal} crystal and you gold risedue {userRisedueGold}");
+            Console.WriteLine($"Do you have {userNumberCrystal} crystal and you gold risedue {userNumberGold}");
         }
     }
 }
