@@ -17,7 +17,7 @@ namespace homeWorkCrystalStore
                 $" now how mach crytal do you want by?: ");
             userNumberCrystal = Convert.ToInt32(Console.ReadLine());
 
-            userNumberGold = userNumberGold - userNumberCrystal * costOneCrystal;
+            userNumberGold -= userNumberCrystal * costOneCrystal;
 
             Console.WriteLine($"Do you have {userNumberCrystal} crystal and you gold risedue {userNumberGold}");
         }
